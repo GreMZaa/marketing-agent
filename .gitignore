@@ -1,0 +1,8 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.streamlit/
+.docs
+.agents/
+debug_opt.log
