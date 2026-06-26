@@ -54,6 +54,24 @@ st.html("""
         background-color: #f4f5f6 !important;
         border-right: 1px solid #e5e7eb !important;
         width: 260px !important;
+        min-width: 260px !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    
+    /* Force sidebar to always be visible */
+    section[data-testid="stSidebar"] > div {
+        width: 260px !important;
+    }
+    
+    /* Hide the collapse sidebar button */
+    button[data-testid="stSidebarCollapseButton"],
+    button[kind="headerNoPadding"] {
+        display: none !important;
+    }
+    
+    [data-testid="collapsedControl"] {
+        display: none !important;
     }
     
     section[data-testid="stSidebar"] .stMarkdown {
